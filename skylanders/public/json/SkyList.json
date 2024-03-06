@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1",
+    "title": "Zap",
+    "image": "/image/spyros/figures/zap.png",
+    "elem": "eau",
+    "elemImg": "/image/elements/water.png",
+    "jeu": "spyros",
+    "card": "image/spyros/cards/zap.png"
+  },
+  {
+    "id": "2",
+    "title": "Eruptor",
+    "image": "/image/spyros/figures/eruptor.png",
+    "elem": "feu",
+    "elemImg": "/image/elements/fire.png",
+    "jeu": "spyros",
+    "card": "image/spyros/cards/eruptor.png"
+  }
+]
