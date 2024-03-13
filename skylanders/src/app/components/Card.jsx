@@ -1,4 +1,7 @@
+import { Button, Checkbox } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
+import { GoHeart } from "react-icons/go";
+import { GoHeartFill } from "react-icons/go";
 
 function Card() {
   const [data, setData] = useState([]);
@@ -14,18 +17,22 @@ function Card() {
       {data.length
         ? data.map((skylanders) => (
             <>
-              <div className="card">
-                <div className={`${skylanders.elem} ${skylanders.jeu}`}>
-                  <img src={skylanders.image} alt={skylanders.title} />
-                  <div className="check">
+              <div className={`${skylanders.elem} ${skylanders.jeuId} card`}>
+                <img src={skylanders.image} alt={skylanders.title} />
+                <div className="text">
+                  <div className="headCard">
                     <h2>{skylanders.title}</h2>
-                    <div className="check"></div>
+                    <div className="check">
+                      <button id="heart" className="heart">
+                        <GoHeart size="1.8em" />
+                      </button>
+                      <Checkbox size="lg" padding="5px" id="checkbox" />
+                    </div>
                   </div>
-
                   <div className="info">
-                    <p className={skylanders.jeu}>{skylanders.jeu}</p>
-                    <p className={skylanders.elem}>{skylanders.elem}</p>
-                    <img src={skylanders.elemImg} />
+                    <p className="jeu">{skylanders.jeu}</p>
+                    <p className="element">{skylanders.elem}</p>
+                    <img src={skylanders.elemImg} alt={skylanders.elem} />
                   </div>
                 </div>
               </div>
