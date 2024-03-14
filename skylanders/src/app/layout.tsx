@@ -1,6 +1,5 @@
 import React from "react";
 import { Providers } from "./providers";
-import "./style/Index.css";
 
 export const metadata = {
   title: "Skylanders",
